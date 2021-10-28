@@ -1,13 +1,11 @@
-import { Container, Text } from '@chakra-ui/layout';
-import React from 'react';
-import styles from './header.module.css'
+import { Box, Container, Text } from "@chakra-ui/react"
 
-const Header = () => {
-    return ( 
-        <Container class={styles.container} >
-            <Text textAlign="center">this is header</Text>
-        </Container>
-     );
+export default function Header() {
+  return (
+    <Box as="header" shadow="sm">
+      <Container py="2" maxW="container.xl">
+        <Text>Header</Text>
+      </Container>
+    </Box>
+  )
 }
- 
-export default Header;
