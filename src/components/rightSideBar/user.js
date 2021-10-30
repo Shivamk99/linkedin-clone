@@ -9,7 +9,7 @@ import { Button } from "@chakra-ui/button";
 
 const User = ({ userName, profile, headline, id }) => {
   return (
-    <Box mt="14px" key={id}>
+    <Box mt="14px" key={id} bg="white">
       <Flex>
         <Avatar name="Front-end Developer" src={profile} />
         <Box
