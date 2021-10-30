@@ -1,0 +1,59 @@
+.container{
+    width: 100%;
+    height: 117px;
+    background: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 7px;
+    color: #e7f3ff;
+}
+
+.sortText{
+    font-size: 12px;
+    display: flex;
+    color: #6b6b6b;
+    cursor: pointer;
+}
+
+.boldText{
+    color: rgb(80, 80, 80);
+    padding-left: 3px;
+}
+
+.moreIcon{
+    color: rgb(114, 114, 114);
+}
+
+.earthIcon{
+    color: rgb(68, 68, 68);
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.dot{
+    margin-left: 2px;
+}
+
+.description{
+    direction: rtl;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+}
+
+.iconColor{
+    color: #4b4b4b
+}
+
+.hoverLikes:hover{
+    margin-top: -40px;
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+}
+
+#rtl{
+    direction: rtl;
+}
+
+#ltr{
+    direction: ltr;
+}
