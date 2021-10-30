@@ -1,52 +1,75 @@
-export const users = () => [
+const users = [
   {
-      id: 1,
+    id: 1,
+    name: "React",
+    headline: "3,223 followers",
+    profile:
+      "https://media-exp1.licdn.com/dms/image/C510BAQGXWP9awTLTpA/company-logo_200_200/0/1580825137960?e=1643846400&v=beta&t=_57bytFGOveIsGbjdiwRoY_9GBHqEWvc75vUUIUcx04",
+    desc: `The Plan for React 18`,
+    image:
+      "https://media-exp1.licdn.com/dms/image/sync/C4E27AQEA75IeWH52dg/articleshare-shrink_800/0/1635416216798?e=1635613200&v=beta&t=7lUy-qt1Tke2SWMbKgtb93wCyTuKl9cGm2Q25fRkOQk",
+    date: "2w",
+    lang: false,
+  },
+
+  {
+    id: 2,
+    name: "ali turkaman",
+    headline: "frontend developer",
+    profile:
+      "https://media-exp1.licdn.com/dms/image/C4E03AQGDLTWirp9bDA/profile-displayphoto-shrink_200_200/0/1634990800908?e=1640822400&v=beta&t=u787Hy5Q5DgbUeotOshppEG-4e_dIHh2BV4bLbN8u38",
+    desc: ` باز طراحی سایت توییتر با استفاده از reactjs
+     طراحی کامل ریسپانسیو`,
+    image:
+      "https://media-exp1.licdn.com/dms/image/C4E22AQH25qnz451eQQ/feedshare-shrink_800/0/1634731585963?e=1638403200&v=beta&t=se2v3tWuSxuBUVS_uEDd90UnVWbyagXNzQDs6nS9QBQ",
+    date: "1w",
+    lang: true,
+  },
+
+  {
+    id: 3,
     name: "matin turkaman",
     headline: "frontend developer",
     profile:
       "https://media-exp1.licdn.com/dms/image/C5603AQHdK2bcIE7MxQ/profile-displayphoto-shrink_200_200/0/1634992363930?e=1640822400&v=beta&t=oOWXZKCiqeDtVCctCRutwI01zIkMbtjwISssG4WMuds",
-    desc: `#reactjs با استفاده از Classify-store سایت
-
-    ** لینک انلاین سایت ** 👇👇👇
-    https://lnkd.in/g5-iXyBD
-    
-    امکانات:
-    - میتونید یه محصول اضافه کنید یا حذف کنید
-    
-    - این سایت هر محصول که اضافه میکنید در حفظه مرورگر ذخیره میشه
-    
-    - و اگر محصولی را حذف کنید از حافظه مرورگر حذف میشه و اگر اضافه کنید به حافظه مرورگر ذخیره میشه
-    
-    - و میتوانید دسته بندی کنید و یک دسته بندی اضافه کنید
-    
-    #frontend #frontenddeveloper`,
+    desc: ` با استفاده از Classify-store سایت
+  
+  امکانات:
+  - میتونید یه محصول اضافه کنید یا حذف کنید
+  
+  - این سایت هر محصول که اضافه میکنید در حفظه مرورگر ذخیره میشه
+  
+  - و اگر محصولی را حذف کنید از حافظه مرورگر حذف میشه و اگر اضافه کنید به حافظه مرورگر ذخیره میشه
+  
+  - و میتوانید دسته بندی کنید و یک دسته بندی اضافه کنید
+  `,
     image:
       "https://media-exp1.licdn.com/dms/image/C5622AQFWx6tIL2LQhQ/feedshare-shrink_800/0/1634996804120?e=1638403200&v=beta&t=8hA5kFGyFfS3AZJhXRONpOY4kUtt87BVzi8QUYVZUrw",
     date: "3h",
+    lang: true,
   },
+
   {
-    id: 2,
-    name: "Mehdi Neysi",
-    headline: "Frontend Developer at PANTOhealth",
+    id: 4,
+    name: "Segun Adebayo",
+    headline:
+      "Creator of Chakra UI ⚡️ | Github Star 🌟 | Designer & Software Engineer 👨🏽‍💻",
     profile:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQGHsLttzK7bYA/profile-displayphoto-shrink_100_100/0/1616651427716?e=1640822400&v=beta&t=DX8eDGH46hlR0qkvTQ8Qr-h-LKjrtQ8jpq27IVJ4lnA",
-    desc: `ویژگی‌های پروژه:
-    - تغییر تصویر پروفایل
-    - تغییر تصویر کاور
-    - کپی کردن آدرس پروفایل
-    - فرم حساب کاربری
-    - فرم حساب شرکت
-    - بخش اعلان‌ها
-    - طراحی ریسپانسیو
-    - اسکرول بار سفارشی
+      "https://media-exp1.licdn.com/dms/image/C4D03AQHJAW_SvFumxw/profile-displayphoto-shrink_100_100/0/1534498581448?e=1640822400&v=beta&t=EcAf0JqAzgSbuXmthtyiwHLzRIR34KZfagdzujP8F9M",
+    desc: `If you missed my talk yesterday at the Next.js Conf ▲ , here's the link to watch the replay: https://lnkd.in/ePMXvEF3
+
+    Watch me build a Slider component using a state machine 🤓 and React.
     
-    تکنولوژی‌های به کار رفته:
-    #reactjs
-    #chakraui
+    Slides: https://lnkd.in/eg9GqtMq
     
-    https://lnkd.in/dWRfus9`,
+    Demo: https://lnkd.in/eptMHb2T
+    
+    Thanks to Vercel for having me`,
     image:
-      "https://media-exp1.licdn.com/dms/image/C4D22AQFxqqHMq3DP7g/feedshare-shrink_800/0/1618478278848?e=1638403200&v=beta&t=ph7sYCQddd_ufnfcskfTMGyK-KHqMu88ANuKFy26nEE",
-    date: "7mo",
+      "https://nextjs.org/static/twitter-cards/conf/twitter-card-jun-21.png",
+    date: "2d",
+    lang: false,
   },
 ];
+
+export default users;
