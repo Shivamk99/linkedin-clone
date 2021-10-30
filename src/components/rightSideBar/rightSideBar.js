@@ -21,7 +21,7 @@ const RightSideBar = ({ userName }) => {
         width="100%"
         height="350px"
         borderRadius="10px"
-        bg="white.300"
+        bg="white"
         padding="15px"
         border="1px solid #ccc"
         display="flex"
