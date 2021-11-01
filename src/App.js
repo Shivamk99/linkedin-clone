@@ -9,7 +9,7 @@ export default function App() {
   return (
     <Box bg="gray.50">
       <Header />
-      <Container pt="10" maxW="container.xl">
+      <Container maxW="container.xl">
         <HStack spacing="6" alignItems="flex-start">
           <LeftSideBar />
           <Main />
