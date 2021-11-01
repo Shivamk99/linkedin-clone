@@ -5,7 +5,7 @@ export default function Card({ children, ...rest }) {
     <Box
       w="full"
       bg="white"
-      rounded="md"
+      rounded="lg"
       overflow="hidden"
       borderWidth="1px"
       borderStyle="solid"
