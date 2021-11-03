@@ -7,7 +7,7 @@ const users = [
       "https://media-exp1.licdn.com/dms/image/C510BAQGXWP9awTLTpA/company-logo_200_200/0/1580825137960?e=1643846400&v=beta&t=_57bytFGOveIsGbjdiwRoY_9GBHqEWvc75vUUIUcx04",
     desc: `The Plan for React 18`,
     image:
-      "https://media-exp1.licdn.com/dms/image/sync/C4E27AQEA75IeWH52dg/articleshare-shrink_800/0/1635416216798?e=1635613200&v=beta&t=7lUy-qt1Tke2SWMbKgtb93wCyTuKl9cGm2Q25fRkOQk",
+      "https://reactjs.org/logo-og.png",
     date: "2w",
     lang: false,
   },
