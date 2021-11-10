@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react"
 import { BsBookmarkFill } from "react-icons/bs"
 
+import { profile } from "../../db/profile"
+
 import Card from "../Common/Card"
 
 export default function FeedIdentity() {
@@ -22,29 +24,29 @@ export default function FeedIdentity() {
           left="0"
           right="0"
           h="14"
-          src="https://media-exp1.licdn.com/dms/image/C4D16AQFmRVCtKXWWgg/profile-displaybackgroundimage-shrink_200_800/0/1630249932527?e=1640822400&v=beta&t=r2oHy2lQyLpu1SeNCxcEM9u_kTzisUBPd9PKzat0QrI"
+          src={profile.header}
           alt="Programming is thinking not typing"
         />
-        <Link href="/in/neysimehdi">
+        <Link href="/in/ali-turkaman">
           <Avatar
             p="0.5"
             bg="white"
             size="lg"
-            name="Mehdi Neysi"
-            src="https://media-exp1.licdn.com/dms/image/C4D03AQGHsLttzK7bYA/profile-displayphoto-shrink_100_100/0/1616651427716?e=1640822400&v=beta&t=DX8eDGH46hlR0qkvTQ8Qr-h-LKjrtQ8jpq27IVJ4lnA"
+            name="Ali Turkaman"
+            src={profile.profileImage}
           />
         </Link>
         <VStack spacing="0">
           <Link
-            href="/in/neysimehdi"
+            href="/in/ali-turkaman"
             fontSize="sm"
             fontWeight="semibold"
             color="gray.800"
           >
-            Mehdi Neysi
+            {profile.name}
           </Link>
           <Text color="gray.500" fontSize="xs">
-            Frontend Developer at PANTOhealth
+            {profile.headline}
           </Text>
         </VStack>
       </VStack>
@@ -71,7 +73,7 @@ export default function FeedIdentity() {
               Who viewed your profile
             </Text>
             <Text color="blue.500" fontWeight="semibold">
-              782
+              520
             </Text>
           </Flex>
         </Box>
@@ -83,14 +85,14 @@ export default function FeedIdentity() {
             fontSize="xs"
             userSelect="none"
             justifyContent="space-between"
-            href="/in/neysimehdi/detail/recent-activity/shares"
+            href="/in//ali-turkaman/detail/recent-activity/shares"
             _hover={{ bg: "gray.50" }}
           >
             <Text color="gray.500" fontWeight="semibold">
               Views of your post
             </Text>
             <Text color="blue.500" fontWeight="semibold">
-              6,342
+              2,243
             </Text>
           </Flex>
         </Box>

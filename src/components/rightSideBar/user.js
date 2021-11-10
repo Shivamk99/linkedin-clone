@@ -19,10 +19,10 @@ const User = ({ userName, profile, headline, id }) => {
           alignItems="flex-start"
           justifyContent="flex-start"
         >
-          <Text fontWeight="medium" fontSize="15px">
+          <Text fontWeight="medium" fontSize="13px" color="gray.900">
             {userName}
           </Text>
-          <Text color="gray.600" fontSize="14px" mt="-1">
+          <Text color="gray.500" fontSize="12px" mt="-1">
           {headline}
           </Text>
           <Button
@@ -38,7 +38,7 @@ const User = ({ userName, profile, headline, id }) => {
             _hover={{ bg: 'gray.300', border: '2px solid gray' }}
             mt="1"
           >
-            <Text>Follow</Text>
+            <Text color="gray.600">Follow</Text>
           </Button>
         </Box>
       </Flex>

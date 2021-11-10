@@ -7,7 +7,7 @@ import RightSideBar from "./components/rightSideBar/rightSideBar"
 
 export default function App() {
   return (
-    <Box bg="#f3f2ef">
+    <Box>
       <Header />
       <Container maxW="container.xl">
         <HStack spacing="6" alignItems="flex-start">

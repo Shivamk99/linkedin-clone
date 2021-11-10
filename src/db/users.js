@@ -17,7 +17,7 @@ const users = [
     name: "ali turkaman",
     headline: "frontend developer",
     profile:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQGDLTWirp9bDA/profile-displayphoto-shrink_200_200/0/1634990800908?e=1640822400&v=beta&t=u787Hy5Q5DgbUeotOshppEG-4e_dIHh2BV4bLbN8u38",
+      "https://avatars.githubusercontent.com/u/79016171?v=4",
     desc: ` باز طراحی سایت توییتر با استفاده از reactjs
      طراحی کامل ریسپانسیو`,
     image:
