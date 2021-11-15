@@ -6,27 +6,31 @@ import {
   Flex,
   HStack,
   VStack,
-  Text
-} from "@chakra-ui/react"
-import { BsBookmarkFill } from "react-icons/bs"
+  Text,
+} from "@chakra-ui/react";
+import { BsBookmarkFill } from "react-icons/bs";
 
-import { profile } from "../../db/profile"
+import { profile } from "../../db/profile";
 
-import Card from "../Common/Card"
+import Card from "../Common/Card";
 
 export default function FeedIdentity() {
   return (
-    <Card>
+    <Card rounded={{base: '0', sm: 'lg', md: 'lg', lg: 'lg', xl: 'lg'}} >
       <VStack p="2" position="relative">
-        <Image
-          position="absolute"
-          top="0"
-          left="0"
-          right="0"
-          h="14"
-          src={profile.header}
-          alt="Programming is thinking not typing"
-        />
+  
+          <Image
+            position="absolute"
+            w="full"
+            top="0"
+            left="0"
+            right="0"
+            h="14"
+            objectFit="cover"
+            src={profile.header}
+            alt="Programming is thinking not typing"
+          />
+
         <Link href="/in/ali-turkaman">
           <Avatar
             p="0.5"
@@ -111,5 +115,5 @@ export default function FeedIdentity() {
         <span>My Items</span>
       </HStack>
     </Card>
-  )
+  );
 }

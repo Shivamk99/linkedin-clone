@@ -8,18 +8,18 @@ import { Image, Link, Flex } from "@chakra-ui/react";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const RightSideBar = ({ userName }) => {
+const RightSideBar = () => {
   return (
     <Box
-      width="26%"
-      display="flex"
+      display={{ base: "none", md: "none", lg: "flex", xl: "flex" }}
+      width={{ base: "xl", md: "0", lg: "270px", xl: "80" }}
       flexDirection="column"
       alignItems="center"
-      height="800px"
+      height="fit-content"
     >
       <Box
         width="100%"
-        height="350px"
+        height="fit-content"
         borderRadius="10px"
         bg="white"
         padding="15px"
@@ -66,13 +66,14 @@ const RightSideBar = ({ userName }) => {
           bg="transparent"
           mt="10px"
           width="200px"
-          p="3px"
+          height="20px"
+          p="0px"
           rightIcon={<BsArrowRight />}
           color="gray.600"
           _hover={{ bg: "#dfdfdf" }}
           cursor="pointer"
         >
-          View all recommendations{" "}
+          View all recommendations
         </Button>
       </Box>
 

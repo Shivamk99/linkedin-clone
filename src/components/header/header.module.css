@@ -2,15 +2,15 @@
     width: 100%;
     height: 53px;
     background: white;
-    margin-bottom: 55px;
     border-bottom: .1px solid #e9e9e9;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
-.box {
+/* .box {
     width: 37%;
     height: 53px;
     display: flex;
     align-items: center;
-}
+} */

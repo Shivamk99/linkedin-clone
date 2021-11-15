@@ -8,25 +8,32 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon
-} from "@chakra-ui/react"
-import { BiGroup, BiCalendarEvent } from "react-icons/bi"
+  AccordionIcon,
+} from "@chakra-ui/react";
+import { BiGroup, BiCalendarEvent } from "react-icons/bi";
 
-import { community_recents } from "../../data/community"
-import Card from "../Common/Card"
+import { community_recents } from "../../data/community";
+import Card from "../Common/Card";
 
-export default function CommunityPanel() {
+export default function CommunityPanel({ show }) {
   return (
-    <Card>
+    <Card
+      display={{
+        base: show ? "block" : "none",
+        md: "block",
+        lg: "block",
+        xl: "block",
+      }}
+    >
       <Accordion userSelect="none" defaultIndex={[0, 1, 2]} allowMultiple>
         <CustomizedAccordionItem title="Recent" items={community_recents} />
         <CustomizedAccordionItem
           title="Groups"
-          items={community_recents.filter(i => i.type === "group")}
+          items={community_recents.filter((i) => i.type === "group")}
         />
         <CustomizedAccordionItem
           title="Events"
-          items={community_recents.filter(i => i.type === "event")}
+          items={community_recents.filter((i) => i.type === "event")}
         />
       </Accordion>
       <Box
@@ -44,7 +51,7 @@ export default function CommunityPanel() {
         Discover more
       </Box>
     </Card>
-  )
+  );
 }
 
 function CustomizedAccordionItem({ title, items }) {
@@ -93,5 +100,5 @@ function CustomizedAccordionItem({ title, items }) {
         </List>
       </AccordionPanel>
     </AccordionItem>
-  )
+  );
 }

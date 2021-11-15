@@ -18,16 +18,15 @@ import {
 } from "@chakra-ui/popover";
 
 const Post = ({ user }) => {
-
   return (
     <Box
       key={user.id}
       width="100%"
-      minHeight="500px"
+      // minHeight="500px"
       background="white"
-      mt="2"
       borderRadius="7px"
       border="1px solid #dfdfdf"
+      mb="2"
       pl="1"
       pr="1"
     >
@@ -108,8 +107,13 @@ const Post = ({ user }) => {
         </Box>
       </Flex>
 
-      <Box padding="4" >
-        <Text id={user.lang ? styles.rtl : styles.ltr} className={styles.description}>{user.desc}</Text>
+      <Box padding="4">
+        <Text
+          id={user.lang ? styles.rtl : styles.ltr}
+          className={styles.description}
+        >
+          {user.desc}
+        </Text>
       </Box>
 
       <Button
@@ -128,7 +132,7 @@ const Post = ({ user }) => {
         See translation
       </Button>
 
-      <Box width="100%" >
+      <Box width="100%">
         <Image
           width="100%"
           src={user.image}
@@ -176,8 +180,8 @@ const Post = ({ user }) => {
               margin="2"
               background="transparent"
               _hover={{ background: "#ecececea" }}
+              leftIcon={<BiLike fontSize="20px" className={styles.iconColor} />}
             >
-              <BiLike fontSize="20px" className={styles.iconColor} />
               <Text color="#6d6d6d" ml="1">
                 Like
               </Text>
@@ -251,8 +255,10 @@ const Post = ({ user }) => {
           as="a"
           background="transparent"
           _hover={{ background: "#ecececea" }}
+          leftIcon={
+            <BiCommentDetail fontSize="20px" className={styles.iconColor} />
+          }
         >
-          <BiCommentDetail fontSize="20px" className={styles.iconColor} />
           <Text color="#6d6d6d" ml="1">
             Comment
           </Text>
@@ -264,21 +270,26 @@ const Post = ({ user }) => {
           as="a"
           background="transparent"
           _hover={{ background: "#ecececea" }}
+          leftIcon={
+            <RiShareForwardLine fontSize="20px" className={styles.iconColor} />
+          }
         >
-          <RiShareForwardLine fontSize="20px" className={styles.iconColor} />
           <Text color="#6d6d6d" ml="1">
             Share
           </Text>
         </Button>
 
         <Button
+          display={{ base: "none",sm: 'flex', md: "flex", xl: "flex" }}
           flex="1"
           margin="2"
           as="a"
           background="transparent"
           _hover={{ background: "#ecececea" }}
+          leftIcon={
+            <RiSendPlaneFill fontSize="20px" className={styles.iconColor} />
+          }
         >
-          <RiSendPlaneFill fontSize="20px" className={styles.iconColor} />
           <Text color="#6d6d6d" ml="1">
             Send
           </Text>

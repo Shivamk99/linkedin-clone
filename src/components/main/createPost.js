@@ -12,9 +12,8 @@ import { BsCalendar2Date } from "react-icons/bs";
 import { RiArticleLine } from "react-icons/ri";
 
 const CreatePost = () => {
-
   return (
-    <Box className={styles.container}>
+    <Box className={styles.container} display={{ base: "none", sm: "block", md: "block", xl: "block" }}>
       <Flex alignItems="center">
         <Avatar
           cursor="pointer"
@@ -40,7 +39,6 @@ const CreatePost = () => {
           color="gray.500"
           transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
           _hover={{ bg: "#ebedf0" }}
-  
           _active={{
             bg: "#dadada",
             borderColor: "#bec3c9",
@@ -51,7 +49,9 @@ const CreatePost = () => {
         </Box>
       </Flex>
 
-      <Flex mt="2">
+      <Flex
+        mt="2"
+      >
         <Button
           mr="3"
           ml="3"
@@ -61,8 +61,10 @@ const CreatePost = () => {
           as="a"
           cursor="pointer"
           _hover={{ bg: "#ebedf0" }}
+          leftIcon={
+            <MdOutlinePhotoSizeSelectActual color="#70b5f9" fontSize="23" />
+          }
         >
-          <MdOutlinePhotoSizeSelectActual color="#70b5f9" fontSize="23" />
           <Text ml="3" color="gray.500">
             Photo
           </Text>
@@ -76,8 +78,8 @@ const CreatePost = () => {
           as="a"
           cursor="pointer"
           _hover={{ bg: "#ebedf0" }}
+          leftIcon={<ImYoutube fontSize="23" color="#7fc15e" />}
         >
-          <ImYoutube fontSize="23" color="#7fc15e" />
           <Text ml="3" color="gray.500">
             video
           </Text>
@@ -91,8 +93,8 @@ const CreatePost = () => {
           as="a"
           cursor="pointer"
           _hover={{ bg: "#ebedf0" }}
+          leftIcon={<BsCalendar2Date color="#e7a33e" fontSize="23" />}
         >
-          <BsCalendar2Date color="#e7a33e" fontSize="23" />
           <Text ml="3" color="gray.500">
             Event
           </Text>
@@ -106,8 +108,8 @@ const CreatePost = () => {
           as="a"
           cursor="pointer"
           _hover={{ bg: "#ebedf0" }}
+          leftIcon={<RiArticleLine color="#fc9295" fontSize="23" />}
         >
-          <RiArticleLine color="#fc9295" fontSize="23" />
           <Text ml="3" color="gray.500">
             Write article
           </Text>

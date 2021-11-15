@@ -30,7 +30,7 @@ const Header = () => {
         pr="60px"
         pl="30px"
       >
-        <Flex alignItems="center"> 
+        <Flex alignItems="center">
           <GrLinkedin color="#0a66c2" cursor="pointer" fontSize="34px" />
           <InputGroup>
             <InputLeftElement
@@ -40,7 +40,8 @@ const Header = () => {
             />
             <Input
               marginLeft="8px"
-              width="280px"
+              width={{ base: "10px", md: "10", lg: "280px", xl: "280px" }}
+              bg={{ base: "", md: "transparent", lg: "#eef3f8", xl: "#eef3f8" }}
               height="35px"
               variant="filled"
               placeholder="Search"
@@ -50,7 +51,7 @@ const Header = () => {
               }}
               transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
               _focus={{
-                width: "350px",
+                width: ["200px", "0px", "300px", "330px"],
               }}
             />
           </InputGroup>
@@ -76,7 +77,17 @@ const Header = () => {
             </Circle>
             <ImHome3 fontSize="25px" color="black" />
             <Box flexDirection="row">
-              <Text fontSize="14px">Home</Text>
+              <Text
+                display={{
+                  base: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                }}
+                fontSize="14px"
+              >
+                Home
+              </Text>
             </Box>
           </Box>
           <Box
@@ -89,7 +100,17 @@ const Header = () => {
           >
             <MdGroup fontSize="25px" color="#636363" />
             <Box flexDirection="row">
-              <Text fontSize="14px">My network</Text>
+              <Text
+                display={{
+                  base: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                }}
+                fontSize="14px"
+              >
+                My network
+              </Text>
             </Box>
           </Box>
           <Box
@@ -102,16 +123,31 @@ const Header = () => {
           >
             <FaToolbox fontSize="25px" color="#636363" />
             <Box flexDirection="row">
-              <Text fontSize="14px">Jobs</Text>
+              <Text
+                display={{
+                  base: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                }}
+                fontSize="14px"
+              >
+                Jobs
+              </Text>
             </Box>
           </Box>
           <Box
-            display="flex"
             alignItems="center"
             justifyContent="center"
             flexDirection="column"
             cursor="pointer"
             marginRight="25px"
+            display={{
+              base: "none",
+              md: "flex",
+              lg: "flex",
+              xl: "flex",
+            }}
           >
             <MdMessage fontSize="25px" color="#636363" />
             <Box flexDirection="row">
@@ -119,7 +155,12 @@ const Header = () => {
             </Box>
           </Box>
           <Box
-            display="flex"
+            display={{
+              base: "none",
+              md: "flex",
+              lg: "flex",
+              xl: "flex",
+            }}
             alignItems="center"
             justifyContent="center"
             flexDirection="column"
@@ -128,33 +169,101 @@ const Header = () => {
           >
             <RiNotification3Fill fontSize="25px" color="#636363" />
             <Box flexDirection="row">
-              <Text fontSize="14px">notifications</Text>
+              <Text
+                display={{
+                  base: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                }}
+                fontSize="14px"
+              >
+                notifications
+              </Text>
             </Box>
           </Box>
-          <Box cursor="pointer" marginRight="15px">
+          <Box
+            cursor="pointer"
+            marginRight="15px"
+            display={{
+              base: "none",
+              sm: "block",
+              md: "block",
+              lg: "block",
+              xl: "block",
+            }}
+          >
             <Avatar
               size="xs"
               marginTop="5px"
               src="https://avatars.githubusercontent.com/u/79016171?v=4"
             />
             <Box display="flex" flexDirection="row">
-              <Text fontSize="14px">Me</Text>
-              <MdArrowDropDown fontSize="25px" color="#636363" />
+              <Text
+                display={{
+                  base: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                }}
+                fontSize="14px"
+              >
+                Me
+              </Text>
+              <Box
+                display={{
+                  base: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                }}
+              >
+                <MdArrowDropDown fontSize="25px" color="#636363" />
+              </Box>
             </Box>
           </Box>
-          <Stack direction="row" h="50px" pr={4}>
+          <Stack
+            direction="row"
+            h="50px"
+            pr={4}
+            display={{
+              base: "none",
+              md: "block",
+              lg: "block",
+              xl: "block",
+            }}
+          >
             <Divider orientation="vertical" />
           </Stack>
           <Box cursor="pointer" onClick={onOpen}>
             <Box>
               <CgMenuGridR fontSize="30px" color="#636363" />
               <Box display="flex" flexDirection="row" cursor="pointer">
-                <Text fontSize="14px">Work</Text>
-                <MdArrowDropDown fontSize="25px" color="#636363" />
+                <Text
+                  display={{
+                    base: "none",
+                    md: "block",
+                    lg: "block",
+                    xl: "block",
+                  }}
+                  fontSize="14px"
+                >
+                  Work
+                </Text>
+                <Box
+                  display={{
+                    base: "none",
+                    md: "block",
+                    lg: "block",
+                    xl: "block",
+                  }}
+                >
+                  <MdArrowDropDown fontSize="25px" color="#636363" />
+                </Box>
               </Box>
             </Box>
           </Box>
-         <DrawerComp isOpen={isOpen} onClose={onClose} />
+          <DrawerComp isOpen={isOpen} onClose={onClose} />
         </Box>
       </Container>
     </div>
